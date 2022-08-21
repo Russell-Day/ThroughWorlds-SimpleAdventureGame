@@ -18,7 +18,7 @@ public class NPC extends Objects{
         super (Name, Description);
         switch (area) {
             case Water -> {
-                hitPoints = ((int) (Math.random() * (5)));
+                hitPoints = ((int) (Math.random() * (4)+1));
                 damage_reduction = 2;
                 gold = 50;
             }
@@ -29,11 +29,11 @@ public class NPC extends Objects{
             }
             case Underground -> {
                 hitPoints = ((int) (Math.random() * (14)+5));
-                damage_reduction = 5;
+                damage_reduction = 4;
                 gold = 750;
             }
             case Forest -> {
-                hitPoints = ((int) (Math.random() * (5)));
+                hitPoints = ((int) (Math.random() * (4)+1));
                 damage_reduction = 3;
                 gold = 150;
             }

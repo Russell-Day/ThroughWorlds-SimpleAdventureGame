@@ -6,6 +6,5 @@ public enum D {
     EAST,
     WEST;
 
-
     public static final int NOEXIT = -1;
-};
+}

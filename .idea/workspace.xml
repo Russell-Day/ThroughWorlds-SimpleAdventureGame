@@ -4,29 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4455174-1bf8-4716-a1db-a35e187f4bfd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Global/A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Global/D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Objects/NPC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Objects/Objects.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Objects/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Objects/Rooms.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/aDirections/Directions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/adventuregame/HelloApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/adventuregame/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/adventuregame/hello-view.fxml" afterDir="false" />
+    <list default="true" id="b4455174-1bf8-4716-a1db-a35e187f4bfd" name="Changes" comment="changing">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Global/D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Global/D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Objects/NPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Objects/NPC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Objects/Objects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Objects/Objects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Objects/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Objects/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/adventuregame/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/adventuregame/HelloController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +30,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/.idea/encodings.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/adventuregame/HelloController.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -102,6 +87,10 @@
       <updated>1658698187191</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="changing" />
+    <option name="LAST_COMMIT_MESSAGE" value="changing" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

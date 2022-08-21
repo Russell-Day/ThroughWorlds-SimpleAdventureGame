@@ -12,9 +12,9 @@ public class Player extends Objects {
         super(Name, Description); // init super class
         this.room = Room;
         health = 100;
-        Strength = ((int)(Math.random()*(6)))+((int)(Math.random()*(6)))+((int)(Math.random()*(6)));
-        Dexterity = ((int)(Math.random()*(6)))+((int)(Math.random()*(6)))+((int)(Math.random()*(6)));
-        Intelligence = ((int)(Math.random()*(6)))+((int)(Math.random()*(6)))+((int)(Math.random()*(6)));
+        Strength = ((int)(Math.random()*(5))+1)+((int)(Math.random()*(5)+1))+((int)(Math.random()*(5)+1));
+        Dexterity = ((int)(Math.random()*(5)+1))+((int)(Math.random()*(5)+1))+((int)(Math.random()*(5)+1));
+        Intelligence = ((int)(Math.random()*(5)+1))+((int)(Math.random()*(5)+1))+((int)(Math.random()*(5)+1));
         gold = 0;
     }
 

@@ -1,7 +1,7 @@
 package Objects;
 
 public class Objects {
-    // Basic Thing type that defines all objects in the Adventure
+    // Defines all objects in the Adventure
 
     private String name;
     private String description;

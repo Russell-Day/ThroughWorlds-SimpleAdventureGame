@@ -191,18 +191,6 @@ public class HelloController {
     public int movePlayerTo(D dir) {
         return moveTo(player, dir);
     }
-    private void goN() {
-        updateOutput(movePlayerTo(D.NORTH));
-    }
-    private void goS() {
-        updateOutput(movePlayerTo(D.SOUTH));
-    }
-    private void goW() {
-        updateOutput(movePlayerTo(D.WEST));
-    }
-    private void goE() {
-        updateOutput(movePlayerTo(D.EAST));
-    }
     void updateOutput(int roomNumber) {
         // if roomNumber = NOEXIT, display a special message, otherwise
         // display text (e.g. name and description of room)
@@ -224,6 +212,19 @@ public class HelloController {
         }
         ContentText.setText(s);
     } //Initializes Fight
+    private void goN() {
+        updateOutput(movePlayerTo(D.NORTH));
+    }
+    private void goS() {
+        updateOutput(movePlayerTo(D.SOUTH));
+    }
+    private void goW() {
+        updateOutput(movePlayerTo(D.WEST));
+    }
+    private void goE() {
+        updateOutput(movePlayerTo(D.EAST));
+    }
+
 
 
     // Fight
@@ -260,7 +261,7 @@ public class HelloController {
     private void attack(){
         String s;
         int damage;
-        int random = (int)(Math.random()*20+1);
+        int random = (int)(Math.random()*19+1);
         if (random >= npc.getDexterity()){
             damage = npc.setHitPoints(player);
             if (npc.getHitPoints()<=0){
@@ -283,7 +284,7 @@ public class HelloController {
     private String enemy_attack(){
         String s = "";
         int damage;
-        int random = (int)(Math.random()*20+1);
+        int random = (int)(Math.random()*19+1);
         if (random >= player.getDexterity()){
             player.takeDamage(npc.getStrength()/3);
             damage = npc.getStrength()/3;
@@ -297,7 +298,7 @@ public class HelloController {
         }
         return s;
     }
-    public String getRunAwayAttack(Player player){
+    public String getRunAwayAttack(){
         String s="";
         if (((int)Math.random()*(20)+1)<npc.getIntelligence()){
             player.takeDamage((npc.getStrength()/3));
@@ -351,7 +352,7 @@ public class HelloController {
                 s = "You ran away to the East back to where you just were.";
                 break;
         }
-        s+=getRunAwayAttack(player);
+        s+=getRunAwayAttack();
         contentText1.setText(s);
     }
 
@@ -394,10 +395,14 @@ public class HelloController {
     //movement
     @FXML
     public void onEastButtonClick(ActionEvent actionEvent) {
+        String s;
         contentText1.setText("");
         previous_direction = D.EAST;
         hideHelp();
         goE();
+        if (active_fight){
+            contentText1.setText(getRunAwayAttack());
+        }
     }
     @FXML
     public void onWestButtonClick(ActionEvent actionEvent) {
@@ -405,6 +410,9 @@ public class HelloController {
         previous_direction = D.WEST;
         hideHelp();
         goW();
+        if (active_fight){
+            contentText1.setText(getRunAwayAttack());
+        }
     }
     @FXML
     public void onSouthButtonClick(ActionEvent actionEvent) {
@@ -412,6 +420,9 @@ public class HelloController {
         previous_direction = D.SOUTH;
         hideHelp();
         goS();
+        if (active_fight){
+            contentText1.setText(getRunAwayAttack());
+        }
     }
     @FXML
     public void onNorthButtonClick(ActionEvent actionEvent) {
@@ -419,6 +430,9 @@ public class HelloController {
         previous_direction = D.NORTH;
         hideHelp();
         goN();
+        if (active_fight){
+            contentText1.setText(getRunAwayAttack());
+        }
     }
 
 
